@@ -1,6 +1,6 @@
 {
 	"main": "node_modules/expo/AppEntry.js",
-	"homepage": "https://kushad.github.io/dictionary-app",
+	"homepage": "https://kushad.github.io/pocket-thesaurus",
 	"scripts": {
 		"start": "expo start",
 		"android": "expo start --android",
