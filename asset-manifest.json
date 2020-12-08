@@ -1,0 +1,34 @@
+{
+  "files": {
+    "app.js": "/dictionary-app/static/js/app.9b0a65e1.chunk.js",
+    "app.js.map": "/dictionary-app/static/js/app.9b0a65e1.chunk.js.map",
+    "runtime~app.js": "/dictionary-app/static/js/runtime~app.5a9bca40.js",
+    "runtime~app.js.map": "/dictionary-app/static/js/runtime~app.5a9bca40.js.map",
+    "static/js/2.48939abf.chunk.js": "/dictionary-app/static/js/2.48939abf.chunk.js",
+    "static/js/2.48939abf.chunk.js.map": "/dictionary-app/static/js/2.48939abf.chunk.js.map",
+    "fonts/AntDesign.ttf": "/dictionary-app/./fonts/AntDesign.ttf",
+    "fonts/Entypo.ttf": "/dictionary-app/./fonts/Entypo.ttf",
+    "fonts/Feather.ttf": "/dictionary-app/./fonts/Feather.ttf",
+    "fonts/FontAwesome.ttf": "/dictionary-app/./fonts/FontAwesome.ttf",
+    "fonts/FontAwesome5_Brands.ttf": "/dictionary-app/./fonts/FontAwesome5_Brands.ttf",
+    "fonts/FontAwesome5_Solid.ttf": "/dictionary-app/./fonts/FontAwesome5_Solid.ttf",
+    "fonts/Fontisto.ttf": "/dictionary-app/./fonts/Fontisto.ttf",
+    "fonts/Foundation.ttf": "/dictionary-app/./fonts/Foundation.ttf",
+    "fonts/Ionicons.ttf": "/dictionary-app/./fonts/Ionicons.ttf",
+    "fonts/MaterialCommunityIcons.ttf": "/dictionary-app/./fonts/MaterialCommunityIcons.ttf",
+    "fonts/MaterialIcons.ttf": "/dictionary-app/./fonts/MaterialIcons.ttf",
+    "fonts/SimpleLineIcons.ttf": "/dictionary-app/./fonts/SimpleLineIcons.ttf",
+    "favicon-16.png": "/dictionary-app/favicon-16.png",
+    "favicon-32.png": "/dictionary-app/favicon-32.png",
+    "favicon.ico": "/dictionary-app/favicon.ico",
+    "index.html": "/dictionary-app/index.html",
+    "manifest.json": "/dictionary-app/manifest.json",
+    "serve.json": "/dictionary-app/serve.json",
+    "static/js/2.48939abf.chunk.js.LICENSE.txt": "/dictionary-app/static/js/2.48939abf.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.5a9bca40.js",
+    "static/js/2.48939abf.chunk.js",
+    "static/js/app.9b0a65e1.chunk.js"
+  ]
+}
