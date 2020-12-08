@@ -58,7 +58,7 @@ class App extends Component {
 			<>
 				<View style={styles.header}>
 					<Ionicons name="book" size={24} color="white" />
-					<Text style={styles.headerText}> Pocket Dictionary</Text>
+					<Text style={styles.headerText}> Pocket Thesaurus</Text>
 				</View>
 				<View style={styles.container}>
 					<TextInput
