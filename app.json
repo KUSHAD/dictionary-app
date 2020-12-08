@@ -25,6 +25,8 @@
 		},
 		"web": {
 			"favicon": "./assets/favicon.png"
-		}
+		},
+		"description": "a dictionary app powered by expo and react native",
+		"githubUrl": "https://github.com/KUSHAD/pocket-thesaurus"
 	}
 }
