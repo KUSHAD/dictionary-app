@@ -8,7 +8,6 @@ import {
 	TouchableOpacity,
 	View,
 } from 'react-native';
-import { dictionary } from './localDb';
 
 class App extends Component {
 	state = {
@@ -18,17 +17,7 @@ class App extends Component {
 		searchResultsWords: '',
 		searchResultCredit: '',
 	};
-	searchOfflineDictionary = (e) => {
-		const { wordToSearch } = this.state;
-		if (!wordToSearch) {
-			e.preventDefault();
-		} else {
-			this.setState({
-				searchResultMeanings: dictionary[wordToSearch],
-			});
-		}
-		console.log(this.state.searchResultsMeanings);
-	};
+
 	searchDictionary = (e) => {
 		const { wordToSearch } = this.state;
 		if (!wordToSearch) {
@@ -95,7 +84,7 @@ class App extends Component {
 						</TouchableOpacity>
 						<TouchableOpacity
 							disabled={isbuttonDisabled}
-							onPress={this.searchOfflineDictionary}
+							onPress={this.searchDictionary}
 							style={isbuttonDisabled ? styles.disabledButton : styles.button}
 						>
 							<Ionicons name="search" size={24} color="white" />
