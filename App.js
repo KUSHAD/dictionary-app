@@ -8,6 +8,7 @@ import {
 	TouchableOpacity,
 	View,
 } from 'react-native';
+import { dictionary } from './localDb';
 
 class App extends Component {
 	state = {
@@ -16,6 +17,17 @@ class App extends Component {
 		searchResultsMeanings: [],
 		searchResultsWords: '',
 		searchResultCredit: '',
+	};
+	searchOfflineDictionary = (e) => {
+		const { wordToSearch } = this.state;
+		if (!wordToSearch) {
+			e.preventDefault();
+		} else {
+			this.setState({
+				searchResultMeanings: dictionary[wordToSearch],
+			});
+		}
+		console.log(this.state.searchResultsMeanings);
 	};
 	searchDictionary = (e) => {
 		const { wordToSearch } = this.state;
@@ -72,14 +84,25 @@ class App extends Component {
 						style={styles.input}
 						placeholder="Search Words"
 					/>
-					<TouchableOpacity
-						disabled={isbuttonDisabled}
-						onPress={this.searchDictionary}
-						style={isbuttonDisabled ? styles.disabledButton : styles.button}
-					>
-						<Ionicons name="search" size={24} color="white" />
-						<Text style={styles.buttonText}> Search</Text>
-					</TouchableOpacity>
+					<View style={styles.searchButtonContainer}>
+						<TouchableOpacity
+							disabled={isbuttonDisabled}
+							onPress={this.searchDictionary}
+							style={isbuttonDisabled ? styles.disabledButton : styles.button}
+						>
+							<Ionicons name="search" size={24} color="white" />
+							<Text style={styles.buttonText}> Online Search</Text>
+						</TouchableOpacity>
+						<TouchableOpacity
+							disabled={isbuttonDisabled}
+							onPress={this.searchOfflineDictionary}
+							style={isbuttonDisabled ? styles.disabledButton : styles.button}
+						>
+							<Ionicons name="search" size={24} color="white" />
+							<Text style={styles.buttonText}> Offline Search</Text>
+						</TouchableOpacity>
+					</View>
+
 					<View>
 						<View>
 							<Text style={styles.searchResultHeader}>
@@ -139,7 +162,7 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 		backgroundColor: '#00bbff',
 		height: '6vh',
-		width: '25%',
+		width: '30%',
 		borderRadius: 100,
 		borderWidth: '2px',
 		borderColor: '#0048ff',
@@ -157,7 +180,7 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 		backgroundColor: '#5b737c',
 		height: '6vh',
-		width: '25%',
+		width: '30%',
 		borderRadius: 100,
 		borderWidth: '2px',
 		borderColor: '#000000',
@@ -174,5 +197,9 @@ const styles = StyleSheet.create({
 		alignSelf: 'center',
 		fontSize: '20px',
 		fontWeight: 'bold',
+	},
+	searchButtonContainer: {
+		display: 'flex',
+		flexDirection: 'row',
 	},
 });
