@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/pocket-thesaurus/static/js/app.d3c805df.chunk.js",
-    "app.js.map": "/pocket-thesaurus/static/js/app.d3c805df.chunk.js.map",
+    "app.js": "/pocket-thesaurus/static/js/app.e0f5d7c1.chunk.js",
+    "app.js.map": "/pocket-thesaurus/static/js/app.e0f5d7c1.chunk.js.map",
     "runtime~app.js": "/pocket-thesaurus/static/js/runtime~app.ffadd392.js",
     "runtime~app.js.map": "/pocket-thesaurus/static/js/runtime~app.ffadd392.js.map",
-    "static/js/2.ae6ecaaf.chunk.js": "/pocket-thesaurus/static/js/2.ae6ecaaf.chunk.js",
-    "static/js/2.ae6ecaaf.chunk.js.map": "/pocket-thesaurus/static/js/2.ae6ecaaf.chunk.js.map",
+    "static/js/2.49048f4c.chunk.js": "/pocket-thesaurus/static/js/2.49048f4c.chunk.js",
+    "static/js/2.49048f4c.chunk.js.map": "/pocket-thesaurus/static/js/2.49048f4c.chunk.js.map",
     "fonts/AntDesign.ttf": "/pocket-thesaurus/./fonts/AntDesign.ttf",
     "fonts/Entypo.ttf": "/pocket-thesaurus/./fonts/Entypo.ttf",
     "fonts/Feather.ttf": "/pocket-thesaurus/./fonts/Feather.ttf",
@@ -24,11 +24,11 @@
     "index.html": "/pocket-thesaurus/index.html",
     "manifest.json": "/pocket-thesaurus/manifest.json",
     "serve.json": "/pocket-thesaurus/serve.json",
-    "static/js/2.ae6ecaaf.chunk.js.LICENSE.txt": "/pocket-thesaurus/static/js/2.ae6ecaaf.chunk.js.LICENSE.txt"
+    "static/js/2.49048f4c.chunk.js.LICENSE.txt": "/pocket-thesaurus/static/js/2.49048f4c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime~app.ffadd392.js",
-    "static/js/2.ae6ecaaf.chunk.js",
-    "static/js/app.d3c805df.chunk.js"
+    "static/js/2.49048f4c.chunk.js",
+    "static/js/app.e0f5d7c1.chunk.js"
   ]
 }
