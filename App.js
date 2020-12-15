@@ -17,7 +17,33 @@ class App extends Component {
 		searchResultsWords: '',
 		searchResultCredit: '',
 	};
-
+	searchOfflineDictionary = () => {
+		const { wordToSearch } = this.state;
+		if (!wordToSearch) {
+			e.preventDefault();
+		} else {
+			axios
+				.get(`https://dict.geek1011.net/word/${wordToSearch}`, {
+					method: 'GET',
+				})
+				.then((res) => {
+					const data = res.data.result;
+					this.setState({
+						searchResultsWords: data.word,
+						searchResultsMeanings: data.meanings,
+						searchResultEtymology: data.etymology,
+						searchResultCredit: data.credit,
+					});
+				})
+				.catch((err) => {
+					console.error('Error -->', err);
+				});
+			this.setState({
+				wordToSearch: '',
+				isbuttonDisabled: true,
+			});
+		}
+	};
 	searchDictionary = (e) => {
 		const { wordToSearch } = this.state;
 		if (!wordToSearch) {
@@ -29,7 +55,6 @@ class App extends Component {
 				})
 				.then((res) => {
 					const data = res.data.result;
-					console.log(data);
 					this.setState({
 						searchResultsWords: data.word,
 						searchResultsMeanings: data.meanings,
@@ -84,7 +109,7 @@ class App extends Component {
 						</TouchableOpacity>
 						<TouchableOpacity
 							disabled={isbuttonDisabled}
-							onPress={this.searchDictionary}
+							onPress={this.searchOfflineDictionary}
 							style={isbuttonDisabled ? styles.disabledButton : styles.button}
 						>
 							<Ionicons name="search" size={24} color="white" />
